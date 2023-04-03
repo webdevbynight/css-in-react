@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+// App general layout
+.App {
+    font-family: var(--font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}

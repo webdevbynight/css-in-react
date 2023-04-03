@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+// Card
+.card {
+    display: flex;
+    flex-direction: column;
+    width: clamp(28rem, 87.5vw, 50rem);
+    margin: auto;
+    overflow: hidden;
+    border-radius: var(--rounded-corner);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.5);
+    p,
+    ul,
+    form {
+        font-size: var(--text-size);
+        margin: 0 var(--text-margin) var(--text-margin);
+    }
+    form {
+        p {
+            text-align: center;
+        }
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style: none;
+        }
+    }
+    input,
+    button {
+        border: none;
+    }
+    input {
+        &[type="submit"] {
+            color: var(--neutral-react);
+            background: var(--primary-react);
+            padding: 0.5rem 1rem;
+            border-radius: var(--rounded-corner);
+        }
+    }
+    label {
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+    .title {
+        font-size: var(--title-size);
+        text-align: center;
+        margin: var(--text-margin);
+    }
+}
+
+// Gallery
+.gallery {
+    order: -1;
+    position: relative;
+    nav {
+        position: absolute;
+        right: 0;
+        bottom: 1rem;
+        left: 0;
+    }
+    ul {
+        text-align: center;
+        list-style: none;
+        margin: 0;
+    }
+    li {
+        display: inline;
+        &:not(:first-child) {
+            margin-left: 1.5rem;
+        }
+    }
+}
